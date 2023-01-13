@@ -1,0 +1,110 @@
+*{
+margin:0;
+padding:0;
+}
+
+html{
+font-family: 'Abel', sans-serif;
+}
+
+body{
+background-color:#FF9F29;
+}
+
+.white-bg{
+animation-name:white-bg-transition;
+animation-duration:.8s;
+animation-fill-mode:forwards;
+}
+
+.orange-bg{
+animation-name:orange-bg-transition;
+animation-duration:.8s;
+animation-fill-mode:forwards;
+}
+
+.sticky{
+background-color:#FF9F29;
+}
+
+@keyframes white-bg-transition{
+from {background-color:#FF9F29;}
+to {background-color:#FAF3E3;}
+}
+@keyframes orange-bg-transition{
+from {background-color:#FAF3E3;}
+to {background-color:#FF9F29;}
+}
+
+header{
+position:fixed;
+top:0;
+display:flex;
+justify-content:space-between;
+z-index:1;
+width:100%;
+}
+
+nav{
+margin-right:1vw;
+margin-left:50vw;
+}
+
+header ul{
+display:flex;
+margin-right:30px;
+}
+
+header ul>li{
+list-style:none;
+padding:20px 50px;
+}
+
+header ul>li>a{
+text-decoration:none;
+text-align:center;
+font-size:1.5rem;
+color:#FAF3E3;
+transition:.3s;
+}
+
+
+header ul>li>a:hover{
+filter:drop-shadow(1px 1px 3px rgba(255,255,255,.5));
+}
+
+header ul>li>a:active{
+border-bottom:2px solid #FAF3E3;
+}
+
+.phone-wrapper{
+
+}
+
+.phone1{
+position:absolute;
+}
+
+.content1{
+position:absolute;
+}
+
+.phone1 > img{
+width:500px;
+height:1000px;
+}
+.content1 > img{
+position:relative;
+width:516px;
+height:989px;
+border-top-left-radius:8%;
+border-top-right-radius:8%;
+clip-path: polygon(100% 10%,
+                   100% 100%,
+                   0% 100%,
+                    0% 10%);
+                    /*top-right,bottom-right,bottom-left,top-left*/
+scale:.61;
+left:1.48px;
+top:-8px;
+}
