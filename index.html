@@ -43,6 +43,11 @@
 
 <section id="features" class="features-container">
 	<h1 class="large-header">How it can help?</h1>
+	<div class="promo-video">
+		<video id="video" width="512" height="420" autoplay muted loop>
+	  		<source src="./img/temporaryvideo.mp4" type="video/mp4">
+		</video> 
+	</div>
 	<div id="grid1" class="features-grid">
 		<div class="icons"><i class="fa-solid fa-qrcode"></i></div>
 		<div class="description">
@@ -63,7 +68,44 @@
 	</div>
 </section>
 
+<section id="contact-us" class="contact-us">
+	<div class="email-form-container">
+	<h1 class="large-header">Contact Us</h1>
+	<form id="form" class="email-form" action="https://www.freecodecamp.com/email-submit" method="POST">
+     		<label for="email"><p>Email</p><input id="email" type="email" name="email" placeholder="Your email here.."  required></label>
+     		<label for="name"><p>Name</p><input type="text" name="name"placeholder="Your name here.."  required></label>
+	        <label for="email"><p>Email :</p><textarea name="email" placeholder="Write anything here.." required></textarea></label>
+     		<button id="submit" type="submit">Send</button>
+	</form> 
+	</div>
+</section>
+<footer class="footer">
+ <div class="footer-container">
+ 	<div class="logo">
+ 		<a href="mldev.net" class="portfolio-link"><h1>MLDev.Net</h1></a>
+ 		<p>This site is made by Mark Leo Dionisio</p>
+ 		<div class="sm-links">
+ 			<a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+ 			<a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+ 			<a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+	 		<a href="www.freecodecamp.org"><i class="fab fa-free-code-camp"></i></a>
+ 		</div>	
+ 	</div>
+ 	
+ 	<div class="nav-links">
+ 		<h3>Links</h3>
+ 		<a href="#home">Home</a>
+ 		<a href="#features">Features</a>	 	
+ 		<a href="#contact-us">Contact Us</a>
+ 	</div>
+ 	<div class="websites">
+ 		<h3>Sites</h3>
+ 		<a href="www.filtaovana.com">FiltaOvana</a>
+ 	</div>
+ </div>
+</footer>
 </body>
+
 <script type="text/javascript">
 window.addEventListener("scroll",()=>{
 var header = document.querySelector('#header');
