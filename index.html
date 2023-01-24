@@ -7,16 +7,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="bg">
 <header id="header">
-<div class="logo">
-	<img id="header-img" src="./img/filtaovana_logo1.png"/>
-	<h1 class="app-name">FiltaOvana.</h1>
-</div>
-<nav id="nav-bar">
+	<div class="logo">
+		<img id="header-img" src="./img/filtaovana_logo1.png"/>
+		<h1 class="app-name">FiltaOvana</h1>
+		<a id="bar-btn" href="#showmenu" class="bar-btn"><i class="fa fa-bars"></i></a>
+	</div>
+<nav id="nav-bar" class="">
 <ul>
  <li><a id="nav-link" href="#home" target="_self">Home</a></li>
  <li><a id="nav-link" href="#features">Features</a></li>
@@ -34,10 +34,9 @@
 		</div>
 	</div>
 	<div class="dl-section">
-		<h2 class="slogan">Manage Your Equipments Now!</h2>
+		<h2 class="slogan">Start Managing Your Equipment Now!</h2>
 		<img class="google-play" src="./img/Google_Play_300x94(2).png">
 		<img class="apple-store" src="./img/Apple_Store_320x94.png">
-		
 	</div>
 </section>
 
@@ -91,7 +90,6 @@
 	 		<a href="www.freecodecamp.org"><i class="fab fa-free-code-camp"></i></a>
  		</div>	
  	</div>
- 	
  	<div class="nav-links">
  		<h3>Links</h3>
  		<a href="#home">Home</a>
@@ -107,12 +105,17 @@
 </body>
 
 <script type="text/javascript">
+var barBtn = document.getElementById('bar-btn');
+var nav = document.getElementById('nav-bar');
+barBtn.addEventListener("click",()=>{
+	nav.classList.toggle("hide-nav");
+});
 window.addEventListener("scroll",()=>{
 var header = document.querySelector('#header');
 var body = document.querySelector('.bg');
 body.classList.toggle("white-bg",window.scrollY > 100);
 body.classList.toggle("orange-bg",window.scrollY < 100);
-header.classList.toggle("sticky",window.scrollY > 0);
+//header.classList.toggle("sticky",window.scrollY > 0);
 });
 </script>
 </html>
